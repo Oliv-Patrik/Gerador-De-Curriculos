@@ -1,0 +1,74 @@
+/* Estiliza o corpo da página */
+body {
+  font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  background: linear-gradient(to bottom, #4C0192, #17002C); /* Cria um gradiente de fundo */
+  display: flex; /* Define o display como flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura como 100% da viewport */
+}
+
+/* Estiliza o conteúdo principal */
+.content {
+  text-align: left; /* Alinha o texto à esquerda */
+  color: #fff; /* Define a cor do texto como branco */
+  max-width: 600px; /* Define a largura máxima como 600px */
+  margin: 120px 0 0 0; /* Define a margem superior como 120px */
+  padding: 0; /* Remove o preenchimento */
+  position: relative; /* Define a posição como relativa */
+  top: 0; /* Define a posição top como zero */
+  right: 0; /* Define a posição right como zero */
+  transform: none; /* Remove qualquer transformação */
+}
+
+/* Estiliza o título */
+h1 {
+  font-size: 64px; /* Define o tamanho da fonte como 64px */
+  font-weight: bold; /* Define o peso da fonte como bold */
+  color: #CFFE00; /* Define a cor do título como amarelo */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  position: relative; /* Define a posição como relativa */
+  right: 300px; /* Define a posição right como 300px para posicionar o título a dierita */
+  top: -200px; /* Posiciona o título 200px acima da sua posição original */
+}
+
+/* Estiliza o ícone de pessoas */
+.people-icon {
+  position: absolute; /* Define a posição como absoluta */
+  top: -100px; /* Define a posição top como 100px para alinhar com o título */
+  right: 490px; /* Define a posição right como 490px para posicionar o ícone à direita do título */
+}
+
+/* Estiliza o parágrafo */
+p {
+  font-size: 34px; /* Define o tamanho da fonte como 36px */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  position: relative; /* Define a posição como relativa */
+  right: 300px; /* Define a posição right como 300px para posicionar o parágrafo a direita*/
+  top: -190px;/* Posiciona o parágrafo 190px acima da sua posição original */
+}
+
+/* Estiliza o botão Criar Currículo */
+.button {
+  background-color: #CFFE00; /* Define a cor de fundo como amarelo */
+  color: #4C0192; /* Define a cor do texto como roxo */
+  border: none; /* Remove as bordas */
+  border-radius: 20px; /* Define o raio de borda como 20px */
+  padding: 20px 40px; /* Define o preenchimento */
+  font-size: 36px; /* Define o tamanho da fonte como 36px */
+  font-weight: bold; /* Define o peso da fonte como bold */
+  cursor: pointer; /* Define o cursor como pointer */
+  margin: 0; /* Remove a margem */
+  padding: 5px 5px; /* Define o preenchimento */
+  position: relative; /* Define a posição como relativa */
+  right: 300px; /* Define a posição right como 300px para posicionar o botão a direita*/
+  top: -170px;
+}
+
+.button:hover {
+  background-color: #bff000; /* Define a cor de fundo ao passar o mouse como amarelo mais claro */
+}
