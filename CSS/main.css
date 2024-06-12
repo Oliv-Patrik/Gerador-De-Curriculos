@@ -38,7 +38,7 @@ h1 {
 /* Estiliza o ícone de pessoas */
 .people-icon {
   position: absolute; /* Define a posição como absoluta */
-  top: -100px; /* Define a posição top como 100px para alinhar com o título */
+  top: -115px; /* Define a posição top como 100px para alinhar com o título */
   right: 490px; /* Define a posição right como 490px para posicionar o ícone à direita do título */
 }
 
@@ -53,22 +53,23 @@ p {
 }
 
 /* Estiliza o botão Criar Currículo */
-.button {
-  background-color: #CFFE00; /* Define a cor de fundo como amarelo */
-  color: #4C0192; /* Define a cor do texto como roxo */
-  border: none; /* Remove as bordas */
-  border-radius: 20px; /* Define o raio de borda como 20px */
-  padding: 20px 40px; /* Define o preenchimento */
-  font-size: 36px; /* Define o tamanho da fonte como 36px */
-  font-weight: bold; /* Define o peso da fonte como bold */
-  cursor: pointer; /* Define o cursor como pointer */
-  margin: 0; /* Remove a margem */
-  padding: 5px 5px; /* Define o preenchimento */
-  position: relative; /* Define a posição como relativa */
-  right: 300px; /* Define a posição right como 300px para posicionar o botão a direita*/
+.btn-primary {
+  background-color: #CFFE00;
+  color: #4C0192;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  right: 300px;
   top: -170px;
 }
 
-.button:hover {
-  background-color: #bff000; /* Define a cor de fundo ao passar o mouse como amarelo mais claro */
+.btn-primary:hover {
+  background-color: #bff000;
 }
