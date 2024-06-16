@@ -1,0 +1,99 @@
+/* Estiliza o corpo da página */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #4C0192, #17002C);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+}
+
+/* Estiliza o conteúdo principal */
+.container {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estiliza o título */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #CFFE00;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Estiliza o ícone de pessoas */
+.people-icon {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/* Estiliza os grupos de entrada */
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 40px; /* Ajuste a altura dos campos de entrada */
+}
+
+/* Estiliza o botão Criar Currículo */
+.btn-primary {
+  background-color: #CFFE00;
+  color: #4C0192;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+.btn-primary:hover {
+  background-color: #bff000;
+}
+
+.btn-secondary {
+  background-color: #CFFE00;
+  color: #4C0192;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #bff000;
+}
