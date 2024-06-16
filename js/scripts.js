@@ -32,4 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
       newField.classList.add('form-control', 'mt-2');
       experienceContainer.appendChild(newField);
     });
+
+    // Envia o formulário e gera o currículo
+    $('#gerarCurriculoBtn').click(function() {
+      $('#curriculoForm').submit();
+      setTimeout(function() {
+          window.print();
+      }, 1000);
+  });
 });
