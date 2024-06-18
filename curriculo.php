@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="content">
-            <h1">Preencha as informações abaixo para criar o seu currículo</h1>
+            <h1>Preencha as informações abaixo para criar o seu currículo</h1>
             <img src="icon/user-icon.png" alt="Ícone de usuário" class="people-icon no-print">
             <form action="processar_curriculo.php" method="post" id="curriculoForm">
                 <div class="form-group">
