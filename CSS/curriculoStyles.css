@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom , #4C0192, #17002C);
+  background: linear-gradient(to bottom, #4C0192, #17002C);
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -60,7 +60,8 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  height: 40px; /* Ajuste a altura dos campos de entrada */
+  height: 40px;
+  /* Ajuste a altura dos campos de entrada */
 }
 
 /* Estiliza o botão Criar Currículo */

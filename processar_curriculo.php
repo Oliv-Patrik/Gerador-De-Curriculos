@@ -22,39 +22,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!DOCTYPE html>
     <html>
     <head>
-        <link rel='stylesheet' href='css/template.css'>
         <style>
             body {
                 font-family: 'Poppins', sans-serif;
-                margin: 0;
-                padding: 0;
-                background: linear-gradient(to bottom, #4C0192, #17002C);
-                background-size: 100% 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 170vh;
+                color: #fff;
+            }
+
+            .container {
+                text-align: center;
+                max-width: 800px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 25rem;
                 font-weight: bold;
                 color: #CFFE00;
                 margin-bottom: 20px;
-                position: relative;
             }
 
             p {
-                font-size: 1rem;
+                font-size: 15rem;
                 margin-bottom: 5px;
                 width: 100%;
                 padding: 10px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
+                background: rgba(76, 1, 146, 0.8);
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 25rem;
                 font-weight: bold;
                 color: #CFFE00;
                 margin-bottom: 10px;
@@ -71,14 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </style>
     </head>
     <body>
-        <h1>Currículo de $name</h1>
-        <p><strong>Bio:</strong> $bio</p>
-        <p><strong>Data de Nascimento:</strong> $dataNascimento</p>
-        <p><strong>Idade:</strong> $idade</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Telefone:</strong> $phone</p>
-        <p><strong>Gênero:</strong> $gender</p>
-        <h2>Experiências Profissionais:</h2>";
+        <div class='container'>
+            <h1>Currículo de $name</h1>
+            <p><strong>Bio:</strong> $bio</p>
+            <p><strong>Data de Nascimento:</strong> $dataNascimento</p>
+            <p><strong>Idade:</strong> $idade</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Telefone:</strong> $phone</p>
+            <p><strong>Gênero:</strong> $gender</p>
+            <h2>Experiências Profissionais:</h2>";
 
     if (!empty($experiences)) {
         $html .= "<ul>";
@@ -91,11 +92,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $html .= "
-        <h2>Formação Acadêmica:</h2>
-        <p><strong>Instituição:</strong> $education</p>
-        <p><strong>Descrição:</strong> $educationText</p>
-        <h2>Habilidades:</h2>
-        <p>$skillsText</p>
+            <h2>Formação Acadêmica:</h2>
+            <p><strong>Instituição:</strong> $education</p>
+            <p><strong>Descrição:</strong> $educationText</p>
+            <h2>Habilidades:</h2>
+            <p>$skillsText</p>
+         </div>          
     </body>
     </html>";
 
@@ -119,6 +121,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Adicionando página
     $pdf->AddPage();
 
+    // Definindo a cor de fundo
+    $pdf->SetFillColor(76, 1, 146); // Cor roxa
+    $pdf->Rect(0, 0, 210, 297, 'F'); // Preenche a página inteira (A4: 210x297mm)
+
     // Definindo conteúdo HTML
     $pdf->writeHTML($html, true, false, true, false, '');
 
@@ -128,4 +134,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "<p>Método de requisição inválido.</p>";
 }
-?>
