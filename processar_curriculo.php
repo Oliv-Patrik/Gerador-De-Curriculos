@@ -123,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Definindo a cor de fundo
     $pdf->SetFillColor(76, 1, 146); // Cor roxa
-    $pdf->Rect(0, 0, 210, 297, 'F'); // Preenche a página inteira (A4: 210x297mm)
+    $pdf->Rect(0, 0, 210, 297, 'F'); // eenche a página inteirPra (A4: 210x297mm)
 
     // Definindo conteúdo HTML
     $pdf->writeHTML($html, true, false, true, false, '');
